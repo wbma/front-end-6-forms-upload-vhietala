@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Media} from '../interfaces/media';
 import {MediaService} from '../services/media.service';
-import {error} from 'selenium-webdriver';
 import {HttpErrorResponse} from '@angular/common/http';
 
 @Component({
@@ -10,8 +9,6 @@ import {HttpErrorResponse} from '@angular/common/http';
   styleUrls: ['./upload.component.scss']
 })
 export class UploadComponent implements OnInit {
-
-  //formData: FormData;
 
   file: File;
   media: Media = {
